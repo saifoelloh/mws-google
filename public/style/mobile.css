@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+nav {
+  display: none;
+}
+#hero {
+  height: 100vh;
+  background-image: url(../img/ai-codes-coding-247791.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#about {
+  height: 120vh;
+  padding: 7%;
+  display: flex;
+  align-items: stretch;
+}
+.kotak-about {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#mws {
+  height: 90vh;
+  display: flex;
+  background-color: #f0f2f1;
+}
+.kotak-mws {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.kotak-mws > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#contact > div {
+  flex: 1;
+}
+.sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer {
+  height: 50px;
+  text-align: center;
+}

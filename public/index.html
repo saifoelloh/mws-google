@@ -4,79 +4,89 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MWS - Saifoelloh</title>
-    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="./js/manifest.json">
+    <link rel="stylesheet" href="./style/style.css" type="text/css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="./style/mobile.css" type="text/css" media="screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
   </head>
   <body>
-    <div>
-      <div>
-        <header>
+    <div id="root">
+      <nav>
+        <div class="menu">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#jobdesk">MWS</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#mws">MWS</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </header>
+        </div>
+      </nav>
+      <div id="hero">
+        <h1>Sebuah halaman yang sederhana</h1>
       </div>
-      <div>
-        <section id="home">
-          <div>
-            <h1>My landing page</h1>
+      <!-- About section -->
+      <div id="about">
+        <div class="kotak-about">
+          <i class="fas fa-user-circle fa-5x"></i>
+          <h2>Moh. Saifoelloh Noor</h2>
+          <p>Saya adalah seorang mahasiswa UDINUS jurusan Teknik Informatika, saya mulai tertarik ke-dunia komputer sudah sejak lama akan tetapi baru mempelajari pemprograman diperkuliahan ini. Disana saya juga bergabung dengan komunitas DOSCOM (Dinus Open Source COMunity), yang mana merupakan sebuah komunitas yang berfokuskan pada produk-produk opensource serta pengembangan dan juga menyebarluaskannya.</p>
+        </div>
+      </div>
+      <!-- MWS work -->
+      <div id="mws">
+        <div class="kotak-mws">
+          <div class="mws-item">
+            <a href="/01-add2Number/index.html">
+              <i class="fas fa-keyboard fa-8x tx-cen"></i>
+            </a>
           </div>
-        </section>
-        <section id="about">
-          <div>
-            <h1>About</h1>
-            <hr>
-            <div>
-              <p>Mohammad Saifoelloh Noor ialah seorang yatim yang sekarang menempuh pendidikan di Universitas Dian Nuswantoro jurusan Teknik Informatika. Ia berasal dari golongan non <i>IT</i>, akan tetapi hal itu tidak menurunkan api semangat didadanya. Sekarang ia tengah menjalalani 'pelatihan' Google Devloper Kejar, harapan yang ingin dicapai ialah menjadi seorang programmer yang mengerti akan PWA dan dapat menjadi manfaat bagi orang lain.</p>
-            </div>
+          <div class="mws-item">
+            <a href="/02-map/index.html">
+              <i class="fas fa-map-marked-alt fa-8x tx-cen"></i>
+            </a>
           </div>
-        </section>
-        <section id="jobdesk">
+        </div>
+      </div>
+      <!-- Contact -->
+      <div id="contact">
+        <div class="sosmed">
           <div>
             <ul>
-              <li><a href="./01-add2Number/index.html">Add 2 Number</a></li>
-              <li><a href="02-map/index.html">Leaflet & MapBox</a></li>
+              <li><i class="fab fa-google fa-2x"></i> : saifoelloh@gmail.com</li>
+              <li><i class="fab fa-github fa-2x"></i> : saifoelloh</li>
+              <li><i class="fab fa-telegram fa-2x"></i> : saifoelloh</li>
+              <li><i class="fab fa-whatsapp fa-2x"></i> : 085868473809</li>
             </ul>
           </div>
-        </section>
-        <section id="education">
-          <h1>Education</h1>
-          <div class="kotak">
-            <div>
-              <h2>Formal</h2>
-              <ul>
-                <li>SD: SDIT Al-Huda, Wonogiri</li>
-                <li>SMP: SMP Sultan Agung 1, Semarang</li>
-                <li>SMA: SMA Sultan Agung 1, Semarang</li>
-                <li>Universitas Dian Nuswantoro - Teknik Informatika</li>
-              </ul>
-            </div>
-            <div>
-              <h2>Non Formal</h2>
-              <ul>
-                <li>Android Devloper Kejar</li>
-                <li>Workshop IT with CI, Unisbank</li>
-                <li>Bootcamp 30 Hari, Santren Koding</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section id="contact">
-          <h1>Contact</h1>
-          <div>
-            <ul>
-              <li>ID Line: saifoelloh</li>
-              <li>Telegram: saifoelloh</li>
-              <li>Whatsapp: 085868473809</li>
-              <li>Github: saifoelloh</li>
-              <li>Email: saifoelloh@gmail.com</li>
-            </ul>
-          </div>
-        </section>
+        </div>
+        <div id="my-house">
+        </div>
       </div>
+      <!-- Footer -->
+      <div id="footer">
+        <p>Build with <i class="fas fa-heart"></i> by <a href="github.com/saifoelloh">saifoelloh</a></p>
     </div>
+    </div>
+    <script src="./js/house.js" charset="utf-8"></script>
+    <script>
+      if('serviceWorker' in navigator){
+       window.addEventListener('load', ()=> {
+          navigator.serviceWorker.register('./service-worker.js')
+            .then((reg)=> { console.log('ServiceWorker registration success', reg); })
+            .catch((err) => { console.log('ServiceWorker registration failed', err); })
+        })
+      } else {
+        console.log('ServiceWorker not unable to start')
+      }
+    </script>
   </body>
 </html>
